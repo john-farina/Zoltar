@@ -4,7 +4,8 @@
     "description": "zoltar the fortune teller",
     "main": "index.js",
     "scripts": {
-        "start": "webpack --config webpack.config.js"
+        "start": "webpack --config webpack.config.js",
+        "watch": "webpack --config webpack.config.js "
     },
     "repository": {
         "type": "git",

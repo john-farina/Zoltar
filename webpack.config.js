@@ -5,4 +5,5 @@ module.exports = {
         filename: 'zoltar.js',
         path: path.resolve(__dirname, 'dist'),
     },
+    watch: true,
 };
