@@ -1,4 +1,5 @@
 import { zoltarFortunes } from './scripts/zoltarFortunes';
+let fortuneTicket;
 let fortuneText;
 let luckyNumbers;
 
@@ -88,7 +89,7 @@ function changeLuckyNumberText() {
     luckyNumbers.innerHTML = luckyNumber;
 }
 function createFortuneTicket() {
-    const fortuneTicket = document.createElement('div');
+    fortuneTicket = document.createElement('div');
     fortuneTicket.classList.add('fortuneTicket');
 
     const fortuneHeader = document.createElement('h2');
@@ -130,5 +131,6 @@ createFortuneTicket();
 
 const testButton = document.querySelector('.testButton');
 testButton.addEventListener('click', function () {
+    body.removeChild(fortuneTicket);
     createFortuneTicket();
 });
