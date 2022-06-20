@@ -18,6 +18,7 @@ body {
 }
 
 .fortuneTicket {
+    z-index: 6;
     animation: slideDown 3s;
     position: absolute;
     margin-top: 100px;
@@ -111,7 +112,7 @@ body {
     justify-content: center;
     width: 100%;
     height: 100vh;
-    background-color: blue;
+    background-color: #0d3f0e;
 }
 #zoltar {
     z-index: 2;
@@ -126,6 +127,7 @@ body {
 #zoltarHand {
     animation-name: rotateHand;
     animation-duration: 7s;
+    animation-iteration-count: infinite;
 
     position: absolute;
     margin-left: -140px;
@@ -139,7 +141,7 @@ body {
     position: absolute;
     z-index: 3;
     margin-top: 680px;
-    background-color: rgb(169, 42, 42);
+    background-color: rgb(44, 39, 57);
     width: 100%;
     height: 300px;
 }
