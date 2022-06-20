@@ -127,10 +127,43 @@ function createFortuneTicket() {
     fortuneTicket.appendChild(luckyNumbers);
     body.appendChild(fortuneTicket);
 }
-createFortuneTicket();
+// createFortuneTicket();
+
+//SOUND DESIGN
+import { Howl, Howler } from 'howler';
+
+function randomSoundSrc() {
+    let randomNum = randomNumGen(4);
+    let srcString = '';
+    if (randomNum === 0) {
+        srcString = '/src/audio/zoltar1.mp3';
+        console.log('1');
+    } else if (randomNum === 1) {
+        srcString = '/src/audio/zoltar2.mp3';
+        console.log('2');
+    } else if (randomNum === 2) {
+        srcString = '/src/audio/zoltar3.mp3';
+        console.log('3');
+    } else if (randomNum === 3) {
+        srcString = '/src/audio/zoltar4.mp3';
+        console.log('4');
+    }
+    return srcString;
+}
+
+function zoltarSpeech() {
+    var sound = new Howl({
+        src: [randomSoundSrc()],
+        volume: 0.7,
+    });
+    sound.play();
+    sound.on('end', function () {
+        createFortuneTicket();
+    });
+}
 
 const testButton = document.querySelector('.testButton');
 testButton.addEventListener('click', function () {
-    body.removeChild(fortuneTicket);
-    createFortuneTicket();
+    // body.removeChild(fortuneTicket);
+    zoltarSpeech();
 });
