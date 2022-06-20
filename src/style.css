@@ -145,6 +145,54 @@ body {
     height: 280px;
 }
 
+.lamp-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100px;
+    height: 150px;
+}
+.leftLamp {
+    margin-top: -550px;
+    margin-left: -250px;
+}
+.rightLamp {
+    margin-top: -550px;
+    margin-left: 250px;
+}
+.bottomLamp {
+    z-index: 10;
+    margin-top: 70px;
+    position: absolute;
+    background-color: rgb(64, 64, 64);
+    width: 25px;
+    height: 50px;
+    border-radius: 20px 20px 50px 50px;
+}
+.topLamp {
+    margin-top: -10px;
+    z-index: 11;
+    border-bottom: 50px solid rgb(206, 206, 206);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 125px;
+}
+#magicBall-container {
+    margin-top: 330px;
+    margin-left: -290px;
+    z-index: 3;
+    position: absolute;
+    background-color: black;
+    width: 130px;
+    height: 130px;
+}
+#magicBall {
+}
+#ballHolder {
+}
+
 @keyframes rotateHand {
     0% {
         margin-left: -140px;
