@@ -138,12 +138,11 @@ body {
     height: 60px;
 }
 #table {
-    position: absolute;
     z-index: 3;
-    margin-top: 680px;
+    margin-top: 640px;
     background-color: rgb(44, 39, 57);
     width: 100%;
-    height: 300px;
+    height: 280px;
 }
 
 @keyframes rotateHand {
