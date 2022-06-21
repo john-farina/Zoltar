@@ -2,6 +2,10 @@
     font-family: Reikna;
     src: url(./fonts/Reikna.ttf);
 }
+@font-face {
+    font-family: Unicorn;
+    src: url(./fonts/Unicorn.TTF);
+}
 :root {
     --red: rgb(181, 51, 51);
     --blue: rgb(80, 80, 137);
@@ -222,6 +226,24 @@ body {
     width: 60px;
     height: 20px;
     background-color: gray;
+}
+
+#coins-container {
+    margin-bottom: 50px;
+    margin-left: -200px;
+    z-index: 3;
+    position: absolute;
+    width: 200px;
+    height: 100px;
+    background-color: blue;
+    margin-top: 700px;
+}
+.coin {
+    position: absolute;
+    background-color: rgb(220, 196, 58);
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
 }
 
 @keyframes rotateHand {
