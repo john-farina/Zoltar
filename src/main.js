@@ -4,7 +4,7 @@ let fortuneText;
 let luckyNumbers;
 let hasHadFirstFortune = false;
 let isTalking = false;
-let closedOut = false;
+let cardIsOpen = false;
 
 //create random fortune cards
 //random choice for the saying on card (15 choices so far)
@@ -100,6 +100,14 @@ function createFortuneTicket() {
     fortuneTicket = document.createElement('div');
     fortuneTicket.classList.add('fortuneTicket');
 
+    const closeButton = document.createElement('button');
+    closeButton.classList.add('fortuneCloseButton');
+    closeButton.innerHTML = 'X';
+    closeButton.addEventListener('click', function () {
+        cardIsOpen = false;
+        body.removeChild(fortuneTicket);
+    });
+
     const fortuneHeader = document.createElement('h2');
     fortuneHeader.classList.add('fortuneHeader');
     fortuneHeader.classList.add('header');
@@ -127,6 +135,7 @@ function createFortuneTicket() {
     luckyNumbers = document.createElement('p');
     changeLuckyNumberText();
 
+    fortuneTicket.appendChild(closeButton);
     fortuneTicket.appendChild(fortuneHeader);
     fortuneTicket.appendChild(lineBreak);
     fortuneTicket.appendChild(textContainer);
@@ -134,6 +143,7 @@ function createFortuneTicket() {
     fortuneTicket.appendChild(lineBreakTwo);
     fortuneTicket.appendChild(luckyNumbers);
     body.appendChild(fortuneTicket);
+    cardIsOpen = true;
 }
 // createFortuneTicket();
 
@@ -169,8 +179,8 @@ function zoltarSpeech() {
         isTalking = true;
     });
     sound.on('end', function () {
-        createFortuneTicket();
         isTalking = false;
+        createFortuneTicket();
     });
 }
 
@@ -188,15 +198,15 @@ function startAnimationWhenTalking() {
         lightOne.classList.add('lightAnimation');
         lightTwo.classList.add('lightAnimation');
     } else if (isTalking === false) {
-        setTimeout(function () {
-            magicBall.classList.remove('ballColorChange');
-            topLampOne.classList.remove('lampAnimation');
-            topLampTwo.classList.remove('lampAnimation');
-            lightOne.classList.remove('lightAnimation');
-            lightTwo.classList.remove('lightAnimation');
-        }, 2000);
+        magicBall.classList.remove('ballColorChange');
+        topLampOne.classList.remove('lampAnimation');
+        topLampTwo.classList.remove('lampAnimation');
+        lightOne.classList.remove('lightAnimation');
+        lightTwo.classList.remove('lightAnimation');
     }
 }
+
+// createFortuneTicket();
 
 function updateAnimations() {
     startAnimationWhenTalking();
@@ -212,11 +222,17 @@ start();
 const testButton = document.querySelector('.testButton');
 testButton.addEventListener('click', function () {
     if (hasHadFirstFortune === false && isTalking != true) {
-        zoltarSpeech();
+        // zoltarSpeech();
+        createFortuneTicket();
         hasHadFirstFortune = true;
-    } else if (hasHadFirstFortune === true && isTalking != true) {
-        body.removeChild(fortuneTicket);
-        zoltarSpeech();
+    } else if (
+        hasHadFirstFortune === true &&
+        isTalking != true &&
+        cardIsOpen != true
+    ) {
+        // body.removeChild(fortuneTicket);
+        // zoltarSpeech();
+        createFortuneTicket();
     }
     // createFortuneTicket();
 });
