@@ -41,9 +41,14 @@ Z-INDEX CHART:
     --width-and-height: calc(
         var(--container-height) + 1 * var(--container-width)
     );
-    /* --zoltar-height: calc(var(--container-height) / 1.5); */
+
     --zoltar-height: calc(var(--width-and-height) / 2.3);
+    --zoltar-hand-size: calc(var(--zoltar-height) / 8);
+
     --table-height: calc(var(--container-height) / 4);
+
+    --hand-position-width: calc(var(--container-width) / 1.4);
+    --hand-position-height: calc(var(--container-height) / 5);
 }
 
 #zoltarContainer {
@@ -63,8 +68,15 @@ Z-INDEX CHART:
     height: var(--zoltar-height);
 }
 #zoltarDepth {
+    position: absolute;
     z-index: 3;
     height: var(--zoltar-height);
+}
+#zoltarHand {
+    z-index: 4;
+    height: var(--zoltar-hand-size);
+    margin-right: var(--hand-position-width);
+    margin-top: var(--hand-position-height);
 }
 
 #zoltarTable {
