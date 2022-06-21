@@ -174,6 +174,41 @@ function zoltarSpeech() {
     });
 }
 
+const topLampOne = document.querySelector('.lampOne');
+const topLampTwo = document.querySelector('.lampTwo');
+const lightOne = document.querySelector('.lightOne');
+const lightTwo = document.querySelector('.lightTwo');
+const magicBall = document.querySelector('#magicBall');
+
+function startAnimationWhenTalking() {
+    if (isTalking === true) {
+        magicBall.classList.add('ballColorChange');
+        topLampOne.classList.add('lampAnimation');
+        topLampTwo.classList.add('lampAnimation');
+        lightOne.classList.add('lightAnimation');
+        lightTwo.classList.add('lightAnimation');
+    } else if (isTalking === false) {
+        setTimeout(function () {
+            magicBall.classList.remove('ballColorChange');
+            topLampOne.classList.remove('lampAnimation');
+            topLampTwo.classList.remove('lampAnimation');
+            lightOne.classList.remove('lightAnimation');
+            lightTwo.classList.remove('lightAnimation');
+        }, 2000);
+    }
+}
+
+function updateAnimations() {
+    startAnimationWhenTalking();
+}
+function animationLoop() {
+    updateAnimations();
+}
+function start() {
+    setInterval(animationLoop, 400);
+}
+start();
+
 const testButton = document.querySelector('.testButton');
 testButton.addEventListener('click', function () {
     if (hasHadFirstFortune === false && isTalking != true) {
