@@ -49,6 +49,10 @@ Z-INDEX CHART:
 
     --hand-position-width: calc(var(--container-width) / 1.4);
     --hand-position-height: calc(var(--container-height) / 5);
+
+    --magic-ball-width: calc(var(--container-width) / 4);
+    --magic-ball-right: calc(var(--hand-position-width) / 7 - 35px);
+    --magic-ball-holder-height: calc(var(--magic-ball-width) / 4);
 }
 
 #zoltarContainer {
@@ -58,6 +62,7 @@ Z-INDEX CHART:
     height: var(--container-height);
     width: var(--container-width);
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -73,6 +78,7 @@ Z-INDEX CHART:
     height: var(--zoltar-height);
 }
 #zoltarHand {
+    position: relative;
     z-index: 4;
     height: var(--zoltar-hand-size);
     margin-right: var(--hand-position-width);
@@ -80,12 +86,63 @@ Z-INDEX CHART:
 }
 
 #zoltarTable {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
     bottom: 0;
     z-index: 2;
     width: 100%;
     height: var(--table-height);
     background-color: beige;
+}
+#tableContents {
+    position: relative;
+    width: 100%;
+    height: calc(var(--table-height) + 100px);
+    margin-bottom: calc(var(--table-height) - 60px);
+    background-color: rgba(255, 0, 0, 20%);
+}
+#magicBallContainer {
+    position: absolute;
+    height: 130px;
+    width: 100px;
+    margin-left: var(--magic-ball-right);
+    margin-top: 1em;
+    background-color: rgba(0, 0, 255, 40%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#magicBall {
+    position: absolute;
+    width: var(--magic-ball-width);
+    height: var(--magic-ball-width);
+    background-color: white;
+    border-radius: 50%;
+    z-index: 6;
+}
+#ballHolder {
+    position: absolute;
+    height: var(--magic-ball-holder-height);
+    width: calc(var(--magic-ball-holder-height) + 20px);
+    background-color: red;
+    bottom: 0;
+}
+
+#coinsContainer {
+    bottom: 0;
+    margin-left: 20px;
+    position: absolute;
+    width: 150px;
+    height: 100px;
+    background-color: green;
+}
+.coin {
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    border-radius: 50%;
 }
 
 /*------------------ ANIMATIONS -------------------*/
