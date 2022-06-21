@@ -2,6 +2,9 @@ import { zoltarFortunes } from './scripts/zoltarFortunes';
 let fortuneTicket;
 let fortuneText;
 let luckyNumbers;
+let hasHadFirstFortune = false;
+let isTalking = false;
+let closedOut = false;
 
 //create random fortune cards
 //random choice for the saying on card (15 choices so far)
@@ -162,14 +165,23 @@ function zoltarSpeech() {
         volume: 0.7,
     });
     sound.play();
+    sound.on('play', function () {
+        isTalking = true;
+    });
     sound.on('end', function () {
         createFortuneTicket();
+        isTalking = false;
     });
 }
 
 const testButton = document.querySelector('.testButton');
 testButton.addEventListener('click', function () {
-    // body.removeChild(fortuneTicket);
-    zoltarSpeech();
+    if (hasHadFirstFortune === false && isTalking != true) {
+        zoltarSpeech();
+        hasHadFirstFortune = true;
+    } else if (hasHadFirstFortune === true && isTalking != true) {
+        body.removeChild(fortuneTicket);
+        zoltarSpeech();
+    }
     // createFortuneTicket();
 });
