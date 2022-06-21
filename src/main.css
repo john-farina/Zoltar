@@ -35,7 +35,7 @@ Z-INDEX CHART:
 */
 
 :root {
-    --background-color: rgb(187, 225, 227);
+    --background-color: rgb(155, 66, 66);
     --container-width: 400px;
     --container-height: 680px;
     --width-and-height: calc(
@@ -50,14 +50,19 @@ Z-INDEX CHART:
     --hand-position-width: calc(var(--container-width) / 1.4);
     --hand-position-height: calc(var(--container-height) / 5);
 
+    --lamp-container-height: calc(var(--zoltar-height) / 1.9);
+    --lamp-bottom-width: calc(var(--container-width) / 8.4);
+
     --magic-ball-width: calc(var(--container-width) / 4);
     --magic-ball-right: calc(var(--hand-position-width) / 7 - 35px);
     --magic-ball-holder-height: calc(var(--magic-ball-width) / 4);
+
+    --coins-width: calc(var(--magic-ball-width) / 5);
 }
 
 #zoltarContainer {
     position: relative;
-    margin-top: 100px;
+    margin-top: 10px;
     background-color: var(--background-color);
     height: var(--container-height);
     width: var(--container-width);
@@ -65,6 +70,25 @@ Z-INDEX CHART:
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+#glassTexture {
+    opacity: 15%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 20;
+    background-position: center;
+}
+#zoltarLogo {
+    top: 0;
+    margin-top: 5px;
+    font-family: Unicorn, Courier, monospace;
+    position: absolute;
+    z-index: 22;
+    font-size: 4rem;
+    color: red;
+    -webkit-text-stroke: 1px rgb(255, 118, 6);
 }
 
 #zoltarPicture {
@@ -85,6 +109,60 @@ Z-INDEX CHART:
     margin-top: var(--hand-position-height);
 }
 
+#lampsContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 190px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: var(--lamp-container-height);
+    /* background-color: green; */
+}
+.lamp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.topLamp {
+    z-index: 4;
+    /* TRAPAZOID */
+    /* TOP WIDTH */
+    width: calc(var(--lamp-bottom-width) / 2);
+    height: 0;
+    /* BOTH INDENTS */
+    border-left: calc(var(--lamp-bottom-width) / 2) solid transparent;
+    border-right: calc(var(--lamp-bottom-width) / 2) solid transparent;
+    /* BOTTOM WIDTH */
+    border-bottom: var(--lamp-bottom-width) solid rgb(203, 202, 176);
+}
+.bottomLamp {
+    z-index: 4;
+    width: calc(var(--lamp-bottom-width) / 2.6);
+    height: 20px;
+    background-color: gray;
+    border-radius: 0px 0px 5px 5px;
+}
+.lampBacking {
+    z-index: 2;
+    position: absolute;
+    width: calc(var(--lamp-bottom-width) + 10px);
+    height: calc(var(--lamp-bottom-width) + 35px);
+    border-radius: 10px;
+    background-color: darkgray;
+}
+.lampCastLight {
+    z-index: 3;
+    position: absolute;
+    width: calc(var(--lamp-bottom-width) / 2);
+    height: calc(var(--lamp-bottom-width) / 2);
+    border-radius: 50%;
+
+    /* box-shadow: 2px 2px 70px 40px rgba(223, 213, 23, 60%); */
+}
+
 #zoltarTable {
     display: flex;
     align-items: center;
@@ -94,14 +172,14 @@ Z-INDEX CHART:
     z-index: 2;
     width: 100%;
     height: var(--table-height);
-    background-color: beige;
+    background-color: rgb(37, 42, 64);
 }
 #tableContents {
     position: relative;
     width: 100%;
     height: calc(var(--table-height) + 100px);
     margin-bottom: calc(var(--table-height) - 60px);
-    background-color: rgba(255, 0, 0, 20%);
+    /* background-color: rgba(255, 0, 0, 20%); */
 }
 #magicBallContainer {
     position: absolute;
@@ -109,7 +187,7 @@ Z-INDEX CHART:
     width: 100px;
     margin-left: var(--magic-ball-right);
     margin-top: 1em;
-    background-color: rgba(0, 0, 255, 40%);
+    /* background-color: rgba(0, 0, 255, 40%); */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,33 +196,66 @@ Z-INDEX CHART:
     position: absolute;
     width: var(--magic-ball-width);
     height: var(--magic-ball-width);
-    background-color: white;
+    background-color: rgb(255, 250, 255);
     border-radius: 50%;
     z-index: 6;
 }
 #ballHolder {
     position: absolute;
     height: var(--magic-ball-holder-height);
-    width: calc(var(--magic-ball-holder-height) + 20px);
-    background-color: red;
+    width: calc(var(--magic-ball-holder-height) + 34px);
+    background-color: rgb(72, 72, 72);
     bottom: 0;
 }
 
 #coinsContainer {
+    display: flex;
     bottom: 0;
     margin-left: 20px;
     position: absolute;
     width: 150px;
     height: 100px;
-    background-color: green;
 }
 .coin {
-    width: 25px;
-    height: 25px;
-    background-color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: var(--coins-width);
+    height: var(--coins-width);
+    background-color: rgb(235, 222, 37);
     border-radius: 50%;
+    box-shadow: -0.3px 0.3px rgb(138, 122, 26);
 }
-
+.coinFace {
+    width: var(--coins-width);
+    height: var(--coins-width);
+}
+.coin1 {
+}
+.coin2 {
+    margin-left: 13px;
+    margin-top: 10px;
+}
+.coin3 {
+    margin-top: 30px;
+    margin-left: 2px;
+}
+.coin4 {
+    margin-top: 17px;
+}
+.coin5 {
+    margin-left: 25px;
+    margin-top: 2px;
+}
+.coin6 {
+    margin-top: 27px;
+    margin-left: 20px;
+}
+.coin7 {
+    margin-left: 35px;
+    margin-top: 20px;
+}
 /*------------------ ANIMATIONS -------------------*/
 @keyframes color {
     0% {

@@ -11,6 +11,11 @@ let luckyNumbers;
 
 const body = document.querySelector('body');
 
+//CIRCLE TEXT CREATION
+import CircleType from 'circletype';
+const circleType = new CircleType(document.getElementById('zoltarLogo'));
+circleType.radius(500).dir(1);
+
 function randomNumGen(number) {
     let randomNum = Math.floor(Math.random() * number);
     return randomNum;
@@ -165,6 +170,6 @@ function zoltarSpeech() {
 const testButton = document.querySelector('.testButton');
 testButton.addEventListener('click', function () {
     // body.removeChild(fortuneTicket);
-    // zoltarSpeech();
-    createFortuneTicket();
+    zoltarSpeech();
+    // createFortuneTicket();
 });
