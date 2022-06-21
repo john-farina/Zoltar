@@ -1,0 +1,145 @@
+@font-face {
+    font-family: Unicorn;
+    src: url(./fonts/Unicorn.TTF);
+}
+@font-face {
+    font-family: Reikna;
+    src: url(./fonts/Reikna.ttf);
+}
+@font-face {
+    font-family: Enchanted;
+    src: url(./fonts/Enchanted\ Land.otf);
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    font-family: Enchanted, Courier, monospace;
+    color: rgba(8, 8, 8, 0.8);
+}
+
+/* 
+Z-INDEX CHART: 
+
+1- Zoltar Pic
+2- Table
+3- Zoltar Depth
+4- Hand
+
+
+*/
+
+:root {
+    --background-color: rgb(187, 225, 227);
+    --container-width: 400px;
+    --container-height: 680px;
+    --width-and-height: calc(
+        var(--container-height) + 1 * var(--container-width)
+    );
+    /* --zoltar-height: calc(var(--container-height) / 1.5); */
+    --zoltar-height: calc(var(--width-and-height) / 2.3);
+    --table-height: calc(var(--container-height) / 4);
+}
+
+#zoltarContainer {
+    position: relative;
+    margin-top: 100px;
+    background-color: var(--background-color);
+    height: var(--container-height);
+    width: var(--container-width);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#zoltarPicture {
+    position: absolute;
+    z-index: 1;
+    height: var(--zoltar-height);
+}
+#zoltarDepth {
+    z-index: 3;
+    height: var(--zoltar-height);
+}
+
+#zoltarTable {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+    height: var(--table-height);
+    background-color: beige;
+}
+
+/*------------------ ANIMATIONS -------------------*/
+@keyframes color {
+    0% {
+        background-color: rgb(239, 228, 243);
+    }
+    20% {
+        background-color: rgb(205, 226, 243);
+    }
+    40% {
+        background-color: rgb(251, 210, 197);
+    }
+    60% {
+        background-color: rgb(240, 199, 199);
+    }
+    80% {
+        background-color: rgb(198, 241, 208);
+    }
+    90% {
+        background-color: rgb(187, 225, 227);
+    }
+    100% {
+        background-color: rgb(239, 228, 243);
+    }
+}
+
+@keyframes lampFlicker {
+    0% {
+        border-bottom: 50px solid rgb(206, 206, 206);
+        box-shadow: 0px 0px 90px rgba(221, 255, 0, 0%);
+    }
+    10% {
+        border-bottom: 50px solid rgb(206, 206, 206);
+        box-shadow: 0px 0px 90px rgba(221, 255, 0, 0%);
+    }
+    20% {
+        border-bottom: 50px solid rgb(212, 214, 170);
+        box-shadow: 5px 5px 90px rgba(221, 255, 0, 20%);
+    }
+    30% {
+        border-bottom: 50px solid rgb(206, 206, 206);
+        box-shadow: 0px 0px 90px rgba(221, 255, 0, 0%);
+    }
+    40% {
+        border-bottom: 50px solid rgb(212, 214, 170);
+        box-shadow: 5px 5px 90px rgba(221, 255, 0, 20%);
+    }
+    55% {
+        border-bottom: 50px solid rgb(206, 206, 206);
+        box-shadow: 0px 0px 90px rgba(221, 255, 0, 0%);
+    }
+    70% {
+        border-bottom: 50px solid rgb(206, 206, 206);
+        box-shadow: 0px 0px 90px rgba(221, 255, 0, 0%);
+    }
+    80% {
+        border-bottom: 50px solid rgb(212, 214, 170);
+        box-shadow: 5px 5px 90px rgba(221, 255, 0, 20%);
+    }
+    95% {
+        border-bottom: 50px solid rgb(206, 206, 206);
+        box-shadow: 0px 0px 90px rgba(221, 255, 0, 0%);
+    }
+    100% {
+        border-bottom: 50px solid rgb(206, 206, 206);
+        box-shadow: 0px 0px 90px rgba(221, 255, 0, 0%);
+    }
+}

@@ -165,5 +165,6 @@ function zoltarSpeech() {
 const testButton = document.querySelector('.testButton');
 testButton.addEventListener('click', function () {
     // body.removeChild(fortuneTicket);
-    zoltarSpeech();
+    // zoltarSpeech();
+    createFortuneTicket();
 });
