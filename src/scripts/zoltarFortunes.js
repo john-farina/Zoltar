@@ -243,4 +243,61 @@ export const zoltarFortunes = [
     around you. Since you demand
     this of yourself and others, you will
     always live in a tidy atmosphere.`,
+
+    `Yes, you've been up against it at times,
+and fate has been at the bottom of it all.
+Now you can look ahead to better times.
+You Will dream about sun and that will be
+the beginning of a bright future.
+You are a very sincere individual, and like
+to be surrounded by your good friends.
+Your money troubles will soon disappear
+and you will be able to indulge in a few
+luxurles that you've been craving. You will
+be besleged by those less fortunate for
+monetary help and no one will go unaided.`,
+
+    `You've been trying to figure out the
+best time to travel, You're wondering
+if a business trip or a vacation would
+be good. You may be wondering if to
+travel is a better thing than to arrive. It
+is not fit that everyone should travel.
+You change your sky, not your mind,
+when you cross the sea or land.
+A busy idleness possesses you; you
+seek a happy life, with ships, cars, and
+planes: the object of your search is
+present within you. If you travel for
+your holiday remember a good holiday
+is one spent among people whose
+notions of time are more vague than
+your own.`,
+
+    `Unexpected wealth will arrive.
+Remember he is richest, who is content
+with the least, for content is the wealth of
+nature. Although you may look for riches,
+realize that wealth consists not in having
+great possessions, but in having few wants.
+When riches come, do not forget that man's
+true wealth is the good he does in the world.
+So, when opportunity knocks, grab it. It is
+easy at any moment to resign the
+possession of great fortune, to acquire It is
+diffIcult and arduous.`,
+
+    `What a joy to look ahead to read into the
+signs of your future. So much happiness
+is in store for you that the most brilliantly
+lighted stars will be put to shame by the
+brightness of your lle.
+Ah, this is not all caused by sheer good
+luck. Nay, nay my friend, your perseverance,
+your clever ways of handling your domestic
+problems and your sincerity in dealing with
+others are pointing the way to their reward.
+Oh happiness what an elusive thing you
+are. But thank God you were born beneath
+Its star.`,
 ];
