@@ -1,4 +1,5 @@
 import { zoltarFortunes } from './scripts/zoltarFortunes';
+import { Howl, Howler } from 'howler';
 let fortuneTicket;
 let fortuneText;
 let luckyNumbers;
@@ -104,8 +105,11 @@ function createFortuneTicket() {
     closeButton.classList.add('fortuneCloseButton');
     closeButton.innerHTML = 'X';
     closeButton.addEventListener('click', function () {
-        cardIsOpen = false;
-        body.removeChild(fortuneTicket);
+        fortuneTicket.classList.add('throwOutAnimation');
+        setTimeout(function () {
+            cardIsOpen = false;
+            body.removeChild(fortuneTicket);
+        }, 5000);
     });
 
     const fortuneHeader = document.createElement('h2');
@@ -148,8 +152,6 @@ function createFortuneTicket() {
 // createFortuneTicket();
 
 //SOUND DESIGN
-import { Howl, Howler } from 'howler';
-
 function randomSoundSrc() {
     let randomNum = randomNumGen(4);
     let srcString = '';
@@ -170,9 +172,9 @@ function randomSoundSrc() {
 }
 
 function zoltarSpeech() {
-    var sound = new Howl({
+    const sound = new Howl({
         src: [randomSoundSrc()],
-        volume: 0.7,
+        volume: 0.6,
     });
     sound.play();
     sound.on('play', function () {
@@ -180,7 +182,15 @@ function zoltarSpeech() {
     });
     sound.on('end', function () {
         isTalking = false;
-        createFortuneTicket();
+
+        const ticket = new Howl({
+            src: ['/src/audio/ticketSound.mp3'],
+            volume: 0.2,
+        });
+        ticket.play();
+        ticket.on('play', function () {
+            createFortuneTicket();
+        });
     });
 }
 
@@ -222,8 +232,16 @@ start();
 const testButton = document.querySelector('.testButton');
 testButton.addEventListener('click', function () {
     if (hasHadFirstFortune === false && isTalking != true) {
-        // zoltarSpeech();
-        createFortuneTicket();
+        const coin = new Howl({
+            src: ['/src/audio/coinSound.mp3'],
+            volume: 0.4,
+        });
+        coin.play();
+        coin.on('end', function () {
+            zoltarSpeech();
+        });
+
+        // createFortuneTicket();
         hasHadFirstFortune = true;
     } else if (
         hasHadFirstFortune === true &&
@@ -231,8 +249,15 @@ testButton.addEventListener('click', function () {
         cardIsOpen != true
     ) {
         // body.removeChild(fortuneTicket);
-        // zoltarSpeech();
-        createFortuneTicket();
+        const coin = new Howl({
+            src: ['/src/audio/coinSound.mp3'],
+            volume: 0.7,
+        });
+        coin.play();
+        coin.on('end', function () {
+            zoltarSpeech();
+        });
+        // createFortuneTicket();
     }
     // createFortuneTicket();
 });

@@ -15,7 +15,7 @@
 
 .fortuneTicket {
     z-index: 99;
-    animation: slideDown 7s;
+    animation: slideDown 3s;
     position: absolute;
     margin-top: 50px;
     padding: 20px;
@@ -27,22 +27,28 @@
     width: 300px;
     height: 550px;
 }
+.throwOutAnimation {
+    animation-name: throwCardOut;
+    animation-duration: 5s;
+}
 
 .fortuneCloseButton {
-    height: 25px;
-    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
     position: absolute;
     top: 0;
     margin-top: 20px;
     right: 0;
     margin-right: 20px;
-    font-size: 13px;
+    font-size: 7px;
     font-weight: bolder;
-    color: var(--red);
-    border-radius: 10px;
-    border-style: solid;
-    background-color: rgba(255, 255, 255, 0.435);
-    border-color: var(--red);
+    color: rgba(0, 0, 0, 70%);
+    background-color: var(--red);
+    border-radius: 50%;
+    border-style: none;
 }
 
 .fortuneHeader {
@@ -146,7 +152,13 @@
     0% {
         transform: none;
     }
+    15% {
+        transform: translateY(1%);
+    }
+    20% {
+        transform: translateY(10%);
+    }
     100% {
-        transform: translateY(100%);
+        transform: translateY(150%);
     }
 }
