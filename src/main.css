@@ -60,6 +60,44 @@ Z-INDEX CHART:
     --coins-width: calc(var(--magic-ball-width) / 5);
 }
 
+.testButton {
+    position: absolute;
+    border-radius: 0px;
+    bottom: 0;
+    right: 0;
+    margin-right: 40px;
+    width: 60px;
+    height: 100px;
+    z-index: 111;
+}
+#buttonDiv {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+}
+#divButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(145, 145, 145);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 40px;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 100px;
+    z-index: 20;
+    border-style: solid;
+    border-width: 4px;
+    border-color: gray;
+}
+#coinSlot {
+    height: 90px;
+    width: 7px;
+    background-color: rgb(109, 109, 109);
+}
+
 #zoltarContainer {
     position: relative;
     margin-top: 10px;
@@ -89,6 +127,7 @@ Z-INDEX CHART:
     font-size: 4rem;
     color: red;
     -webkit-text-stroke: 1px rgb(255, 118, 6);
+    text-shadow: 0px 30px 10px rgba(0, 0, 0, 8%);
 }
 
 #zoltarPicture {
@@ -107,6 +146,26 @@ Z-INDEX CHART:
     height: var(--zoltar-hand-size);
     margin-right: var(--hand-position-width);
     margin-top: var(--hand-position-height);
+}
+.moveHand {
+    animation-name: moveHand;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes moveHand {
+    0% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(20%);
+    }
+    80% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(-2%);
+    }
 }
 
 #lampsContainer {

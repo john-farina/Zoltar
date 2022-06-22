@@ -28,15 +28,15 @@ export const zoltarFortunes = [
    nothing contrary to what is right,
    speak nothing contrary to what is
    right, and do nothing contrary to
-   what is right. You will then be a per-
-   son at his best.`,
+   what is right. You will then be a person 
+   at his best.`,
 
     `Romance or great friendship you'll
     soon find adds great pleasure to your
     life. You may find that it is difficult
     to know at what moment this love
     begins, but less difficult to know that
-    it has begun. Your love is eternal-
+    it has begun. Your love is eternal
     the aspect may change, but not the
     essence. There is the same difference
     in you before and after you are in
@@ -51,29 +51,29 @@ export const zoltarFortunes = [
     than the intellect.`,
 
     `Yes, you've been up against it at
-    times, and fate has been at the bot-
-    tom of it all. Now you can look ahead
+    times, and fate has been at the bottom 
+    of it all. Now you can look ahead
     to better times. You will dream about
     sun and that will be the beginning of
     a bright future. You are a very sincere
     individual and like to be surrounded
     by your good friends. Your money
     troubles will soon disappear and you
-    will be able to indulge in a few luxu-
-    ries that you've been craving. You will
+    will be able to indulge in a few luxuries 
+    that you've been craving. You will
     be besieged by those less fortunate
     for monetary help and no one will
     go unaided.`,
 
     `Recently you've had to make some
-    judgements as others may be judg-
-    ing you. A wise man makes his own
+    judgements as others may be judging 
+    you. A wise man makes his own
     decisions, an ignorant man follows
     the public opinion. A mountain is
     composed of tiny grains of earth.
     The ocean is made up of tiny drops
-    of water. Even so, life is but an end-
-    less series of little details, actions,
+    of water. Even so, life is but an endless 
+    series of little details, actions,
     speeches, and thoughts, and the
     consequences whether good or bad
     of even the least of them are so far
@@ -83,12 +83,12 @@ export const zoltarFortunes = [
 
     `A ship in the harbor is safe, but that
     is not what ships are built for. Take
-    risks and venture out of your com-
-    fort zone. If you don't move beyond
+    risks and venture out of your comfort 
+    zone. If you don't move beyond
     where you are today, you will never
     have more or be more. There is a trip
-    that you have been thinking of tak-
-    ing. Go. You will make some valuable
+    that you have been thinking of taking. 
+    Go. You will make some valuable
     new contacts.`,
 
     `Standard setting directives you set
@@ -125,8 +125,8 @@ export const zoltarFortunes = [
     project you have been contemplating.
     Your deliberation will pay off in the
     long run because doubt is the father
-    of invention and the key to knowl-
-    edge. This newfound industry pays
+    of invention and the key to knowledge. 
+    This newfound industry pays
     debts, while if you despair, you will
     only increase them. The time is right
     to get going. If you are to move the
@@ -167,12 +167,12 @@ export const zoltarFortunes = [
     becomes more serious and realistic. If
     a person takes no thought about what
     is distant he will find sorrow near at
-    hand. There is a need for good busi-
-    ness judgement now. When things are
+    hand. There is a need for good business 
+    judgement now. When things are
     going well it is all too easy to become
     over confident and not give proper
-    attention to one's duties. If this ten-
-    dency is recognized early it may be
+    attention to one's duties. If this tendency 
+    is recognized early it may be
     corrected and no harm will be done.
     You will also find time after business
     is settled for friends and/or lovers.
@@ -180,14 +180,14 @@ export const zoltarFortunes = [
 
     `Ah, you have been granted the card
     of the elephant. The great ancients
-    have said that the elephant is a sym-
-    bol of strength, stability, power, and
+    have said that the elephant is a symbol 
+    of strength, stability, power, and
     wisdom. This is not to say that such
     things are only received by a medium
     as grand as an elephant. This month,
     wisdom will be delivered to you by
-    the unexpected. Seek wisdom wher-
-    ever you go and remember that "he
+    the unexpected. Seek wisdom wherever 
+    you go and remember that "he
     who does not know one thing, knows
     another."
     `,
@@ -217,12 +217,12 @@ export const zoltarFortunes = [
     and the life of the candle will not be
     shortened. Happiness never decreases
     by being shared. So, if an object you
-    ardently pursue brings little happi-
-    ness when gained, remember most of
+    ardently pursue brings little happiness 
+    when gained, remember most of
     our pleasures come from unexpected
     sources. Share the good news when
-    it arrives. For happiness is like a sun-
-    beam which the least shadow shall
+    it arrives. For happiness is like a sunbeam 
+    which the least shadow shall
     intercept, while suffering is often as
     the rain of spring. Enjoy this very day.`,
 
@@ -239,8 +239,8 @@ export const zoltarFortunes = [
     smoother pattern. You are somewhat
     irresponsible and that has caused you
     some hardships. You have a neat and
-    tidy nature and can't tolerate sloven-
-    liness around you. Since you demand
+    tidy nature and can't tolerate slovenliness 
+    around you. Since you demand
     this of yourself and others, you will
     always live in a tidy atmosphere.`,
 ];

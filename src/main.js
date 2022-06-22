@@ -185,7 +185,7 @@ function zoltarSpeech() {
 
         const ticket = new Howl({
             src: ['/src/audio/ticketSound.mp3'],
-            volume: 0.2,
+            volume: 0.1,
         });
         ticket.play();
         ticket.on('play', function () {
@@ -199,15 +199,18 @@ const topLampTwo = document.querySelector('.lampTwo');
 const lightOne = document.querySelector('.lightOne');
 const lightTwo = document.querySelector('.lightTwo');
 const magicBall = document.querySelector('#magicBall');
+const zoltarHand = document.querySelector('#zoltarHand');
 
 function startAnimationWhenTalking() {
     if (isTalking === true) {
+        zoltarHand.classList.add('moveHand');
         magicBall.classList.add('ballColorChange');
         topLampOne.classList.add('lampAnimation');
         topLampTwo.classList.add('lampAnimation');
         lightOne.classList.add('lightAnimation');
         lightTwo.classList.add('lightAnimation');
     } else if (isTalking === false) {
+        zoltarHand.classList.remove('moveHand');
         magicBall.classList.remove('ballColorChange');
         topLampOne.classList.remove('lampAnimation');
         topLampTwo.classList.remove('lampAnimation');
@@ -229,8 +232,8 @@ function start() {
 }
 start();
 
-const testButton = document.querySelector('.testButton');
-testButton.addEventListener('click', function () {
+const divButton = document.querySelector('#divButton');
+divButton.addEventListener('click', function () {
     if (hasHadFirstFortune === false && isTalking != true) {
         const coin = new Howl({
             src: ['/src/audio/coinSound.mp3'],
@@ -261,3 +264,36 @@ testButton.addEventListener('click', function () {
     }
     // createFortuneTicket();
 });
+
+// const testButton = document.querySelector('.testButton');
+// testButton.addEventListener('click', function () {
+//     if (hasHadFirstFortune === false && isTalking != true) {
+//         const coin = new Howl({
+//             src: ['/src/audio/coinSound.mp3'],
+//             volume: 0.4,
+//         });
+//         coin.play();
+//         coin.on('end', function () {
+//             zoltarSpeech();
+//         });
+
+//         // createFortuneTicket();
+//         hasHadFirstFortune = true;
+//     } else if (
+//         hasHadFirstFortune === true &&
+//         isTalking != true &&
+//         cardIsOpen != true
+//     ) {
+//         // body.removeChild(fortuneTicket);
+//         const coin = new Howl({
+//             src: ['/src/audio/coinSound.mp3'],
+//             volume: 0.7,
+//         });
+//         coin.play();
+//         coin.on('end', function () {
+//             zoltarSpeech();
+//         });
+//         // createFortuneTicket();
+//     }
+//     // createFortuneTicket();
+// });
