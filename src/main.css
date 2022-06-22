@@ -46,6 +46,8 @@ Z-INDEX CHART:
     --background-color: rgb(155, 66, 66);
     --container-width: 400px;
     --container-height: 680px;
+    /* --container-width: 320px;
+    --container-height: 500px; */
     --width-and-height: calc(
         var(--container-height) + 1 * var(--container-width)
     );
@@ -61,7 +63,7 @@ Z-INDEX CHART:
     --lamp-container-height: calc(var(--zoltar-height) / 1.9);
     --lamp-bottom-width: calc(var(--container-width) / 8.4);
 
-    --magic-ball-width: calc(var(--container-width) / 4);
+    --magic-ball-width: calc(var(--container-height) / 6.5);
     --magic-ball-right: calc(var(--hand-position-width) / 7 - 35px);
     --magic-ball-holder-height: calc(var(--magic-ball-width) / 4);
 
@@ -443,5 +445,21 @@ Z-INDEX CHART:
     }
     100% {
         box-shadow: 2px 2px 70px 40px rgba(223, 213, 23, 0%);
+    }
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) {
+    :root {
+        --container-width: 320px;
+        --container-height: 500px;
+    }
+    #ballHolder {
+        margin-bottom: 17px;
+    }
+    #coinsContainer {
+        margin-bottom: -20px;
+    }
+    #divButton {
+        margin-right: 22%;
     }
 }
