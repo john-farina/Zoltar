@@ -128,25 +128,22 @@
         transform: translateY(-170%);
     }
     15% {
-        transform: translateY(-100%);
+        transform: translateY(-130%);
     }
     40% {
         transform: translateY(-90%);
     }
     90% {
-        transform: none;
+        transform: translateY(0%);
     }
     100% {
-        transform: none;
+        transform: translateY(0%);
     }
 }
 
 @keyframes throwCardOut {
     0% {
-        transform: none;
-    }
-    15% {
-        transform: translateY(1%);
+        transform: translateY(0%);
     }
     20% {
         transform: translateY(10%);
