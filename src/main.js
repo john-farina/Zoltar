@@ -1,5 +1,6 @@
 import { zoltarFortunes } from './scripts/zoltarFortunes';
 import { Howl, Howler } from 'howler';
+import CircleType from 'circletype';
 let fortuneTicket;
 let fortuneText;
 let luckyNumbers;
@@ -16,7 +17,7 @@ let cardIsOpen = false;
 const body = document.querySelector('body');
 
 //CIRCLE TEXT CREATION
-import CircleType from 'circletype';
+
 const circleType = new CircleType(document.getElementById('zoltarLogo'));
 circleType.radius(500).dir(1);
 
@@ -177,9 +178,7 @@ function zoltarSpeech() {
         volume: 0.6,
     });
     sound.play();
-    sound.on('play', function () {
-        isTalking = true;
-    });
+    sound.on('play', function () {});
     sound.on('end', function () {
         isTalking = false;
 
@@ -199,10 +198,10 @@ const topLampTwo = document.querySelector('.lampTwo');
 const lightOne = document.querySelector('.lightOne');
 const lightTwo = document.querySelector('.lightTwo');
 const magicBall = document.querySelector('#magicBall');
-const zoltarHand = document.querySelector('#zoltarHand');
 
 function startAnimationWhenTalking() {
     if (isTalking === true) {
+        divButton.classList.remove('growUp');
         zoltarHand.classList.add('moveHand');
         magicBall.classList.add('ballColorChange');
         topLampOne.classList.add('lampAnimation');
@@ -210,6 +209,7 @@ function startAnimationWhenTalking() {
         lightOne.classList.add('lightAnimation');
         lightTwo.classList.add('lightAnimation');
     } else if (isTalking === false) {
+        divButton.classList.add('growUp');
         zoltarHand.classList.remove('moveHand');
         magicBall.classList.remove('ballColorChange');
         topLampOne.classList.remove('lampAnimation');
@@ -240,6 +240,9 @@ divButton.addEventListener('click', function () {
             volume: 0.4,
         });
         coin.play();
+        coin.on('play', function () {
+            isTalking = true;
+        });
         coin.on('end', function () {
             zoltarSpeech();
         });
@@ -257,6 +260,9 @@ divButton.addEventListener('click', function () {
             volume: 0.7,
         });
         coin.play();
+        coin.on('play', function () {
+            isTalking = true;
+        });
         coin.on('end', function () {
             zoltarSpeech();
         });
