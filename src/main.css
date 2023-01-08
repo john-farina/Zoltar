@@ -31,8 +31,8 @@ body {
 #woodBackground {
 }
 
-/* 
-Z-INDEX CHART: 
+/*
+Z-INDEX CHART:
 
 1- Zoltar Pic
 2- Table
@@ -80,11 +80,13 @@ Z-INDEX CHART:
     height: 100px;
     z-index: 111;
 }
+
 #buttonDiv {
     width: 100%;
     height: 100%;
     background-color: blue;
 }
+
 #divButton {
     display: flex;
     align-items: center;
@@ -103,6 +105,7 @@ Z-INDEX CHART:
     border-color: gray;
     cursor: pointer;
 }
+
 .growUp {
     animation-name: growUp;
     animation-duration: 3s;
@@ -126,6 +129,7 @@ Z-INDEX CHART:
     width: 7px;
     background-color: rgb(73, 73, 73);
 }
+
 .buttonLogo {
     position: absolute;
     z-index: 112;
@@ -151,6 +155,7 @@ Z-INDEX CHART:
     align-items: center;
     justify-content: center;
 }
+
 #glassTexture {
     opacity: 15%;
     position: absolute;
@@ -160,6 +165,7 @@ Z-INDEX CHART:
     z-index: 20;
     background-position: center;
 }
+
 #zoltarLogo {
     top: 0;
     margin-top: 5px;
@@ -177,11 +183,13 @@ Z-INDEX CHART:
     z-index: 1;
     height: var(--zoltar-height);
 }
+
 #zoltarDepth {
     position: absolute;
     z-index: 3;
     height: var(--zoltar-height);
 }
+
 #zoltarHand {
     position: relative;
     z-index: 4;
@@ -189,6 +197,7 @@ Z-INDEX CHART:
     margin-right: var(--hand-position-width);
     margin-top: var(--hand-position-height);
 }
+
 .moveHand {
     animation-name: moveHand;
     animation-duration: 5s;
@@ -221,12 +230,14 @@ Z-INDEX CHART:
     height: var(--lamp-container-height);
     /* background-color: green; */
 }
+
 .lamp {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
+
 .topLamp {
     z-index: 4;
     /* TRAPAZOID */
@@ -239,11 +250,13 @@ Z-INDEX CHART:
     /* BOTTOM WIDTH */
     border-bottom: var(--lamp-bottom-width) solid rgb(203, 202, 176);
 }
+
 .lampAnimation {
     animation: lampFlicker;
     animation-duration: 7s;
     animation-iteration-count: infinite;
 }
+
 .bottomLamp {
     z-index: 4;
     width: calc(var(--lamp-bottom-width) / 2.6);
@@ -251,6 +264,7 @@ Z-INDEX CHART:
     background-color: gray;
     border-radius: 0px 0px 5px 5px;
 }
+
 .lampBacking {
     z-index: 2;
     position: absolute;
@@ -259,6 +273,7 @@ Z-INDEX CHART:
     border-radius: 10px;
     background-color: darkgray;
 }
+
 .lampCastLight {
     z-index: 3;
     position: absolute;
@@ -268,6 +283,7 @@ Z-INDEX CHART:
 
     box-shadow: 2px 2px 70px 40px rgba(223, 213, 23, 0%);
 }
+
 .lightAnimation {
     animation: lightFlicker;
     animation-duration: 7s;
@@ -285,6 +301,7 @@ Z-INDEX CHART:
     height: var(--table-height);
     background-color: rgb(37, 42, 64);
 }
+
 #tableContents {
     position: relative;
     width: 100%;
@@ -292,6 +309,7 @@ Z-INDEX CHART:
     margin-bottom: calc(var(--table-height) - 60px);
     /* background-color: rgba(255, 0, 0, 20%); */
 }
+
 #magicBallContainer {
     position: absolute;
     height: 130px;
@@ -303,6 +321,7 @@ Z-INDEX CHART:
     align-items: center;
     justify-content: center;
 }
+
 #magicBall {
     position: absolute;
     width: var(--magic-ball-width);
@@ -311,11 +330,13 @@ Z-INDEX CHART:
     border-radius: 50%;
     z-index: 6;
 }
+
 .ballColorChange {
     animation-name: color;
     animation-duration: 7s;
     animation-iteration-count: infinite;
 }
+
 #ballHolder {
     position: absolute;
     height: var(--magic-ball-holder-height);
@@ -333,6 +354,7 @@ Z-INDEX CHART:
     width: 150px;
     height: 100px;
 }
+
 .coin {
     display: flex;
     align-items: center;
@@ -344,10 +366,12 @@ Z-INDEX CHART:
     border-radius: 50%;
     box-shadow: -0.3px 0.3px rgb(138, 122, 26);
 }
+
 .coinFace {
     width: var(--coins-width);
     height: var(--coins-width);
 }
+
 .coin1 {
 }
 .coin2 {
@@ -373,6 +397,7 @@ Z-INDEX CHART:
     margin-left: 35px;
     margin-top: 20px;
 }
+
 /*------------------ ANIMATIONS -------------------*/
 @keyframes color {
     0% {

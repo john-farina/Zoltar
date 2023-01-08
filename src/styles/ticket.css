@@ -27,6 +27,7 @@
     width: 300px;
     height: 550px;
 }
+
 .throwOutAnimation {
     animation-name: throwCardOut;
     animation-duration: 5s;
@@ -57,21 +58,26 @@
     font-size: 2.5rem;
     color: var(--red);
 }
+
 .header {
     margin-bottom: 20px;
 }
+
 .headerEmoji {
     color: var(--blue);
     position: absolute;
     margin-top: -5px;
 }
+
 .emoji1 {
     margin-left: -20px;
 }
+
 .emoji2 {
     transform: scale(-1, 1);
     margin-right: 10px;
 }
+
 .bottom {
     margin-top: -10px;
 }
@@ -93,35 +99,24 @@
     height: 380px;
     text-align: left;
 }
+
 .fortuneText {
     font-style: oblique;
     margin: 0;
     font-size: 1.1rem;
 }
+
 .luckyNumbers {
     color: var(--blue);
 }
+
 #luckyCaption {
     font-size: 1.2rem;
 }
+
 #luckyNums {
     font-size: 0.9rem;
 }
-
-/* @keyframes slideDown {
-    0% {
-        margin-top: -700px;
-    }
-    20% {
-        margin-top: -590px;
-    }
-    40% {
-        margin-top: -560px;
-    }
-    100% {
-        margin-top: 100px;
-    }
-} */
 
 @keyframes slideDown {
     0% {
