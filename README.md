@@ -4,41 +4,37 @@
 <br />
 <div align="center">
 
-<h1 align="center">Zoltar - Fortune Machine</h1>
+<h1 align="center">Zoltar - Online Fortune Teller</h1>
 
   <p align="center">
-    a breif project_description on what this is
+   This project was inspired by the old fortune teller machines that gives you a random fortune.
     <br />
-    <a href="https://github.com/github_username/repo_name">View Live Demo</a>
+    <a href="https://linktowebsite.com">View Live Demo</a>
 </div>
 
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started: this is wherre you should be explaining what ur project does
+For this project I used layers of images then animated, and oriented it with CSS. Using Javascript to add and remove animations as well. Created design with Images, and pure CSS.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<img src="./src/img/ZoltarFirst.gif" alt="a gif of Zoltar with hand moving and lamps flickering" />
 
+I then manipulate the DOM to place a random fortune after Zoltar has spoken wisdom, which is randomized and played using [Howler](howler.link) The random fortunes come from an array and generates a unique set of lucky numbers for each fortune.
 
+<br/>
 
 ### Built With
- - Vanilla javaScript
- - CSS & HTML
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+ - Javascript
+ - CSS
+<br/>
+<br/>
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+Open Zoltar when you're facing troubles, open Zoltar when you're curious. Get fortunes *(without the quarters!)*
+<br/>
+<br/>
 
 <!-- CONTACT -->
 ## Contact
@@ -48,8 +44,6 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 Project Link: [github.com/john-farina/Zoltar](https://github.com/john-farina/Zoltar)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 
 
