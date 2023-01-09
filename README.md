@@ -22,6 +22,8 @@ For this project I used layers of images then animated, and oriented it with CSS
 
 I then manipulate the DOM to place a random fortune after Zoltar has spoken wisdom, which is randomized and played using [Howler](howler.link) The random fortunes come from an array and generates a unique set of lucky numbers for each fortune.
 
+<img src="./src/img/ZoltarSecond.gif" alt="Zoltars fortune sliding down the screen and closing it" />
+
 <br/>
 
 ### Built With
@@ -30,6 +32,7 @@ I then manipulate the DOM to place a random fortune after Zoltar has spoken wisd
 <br/>
 <br/>
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 Open Zoltar when you're facing troubles, open Zoltar when you're curious. Get fortunes *(without the quarters!)*
