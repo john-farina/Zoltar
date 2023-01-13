@@ -1,6 +1,12 @@
 <a name="readme-top"></a>
 what did i do in this project
 
+About:
+
+For this project i used Vanilla JS so i could fully master and understand what it has to offer, I created this based off of the real Fortune Teller machines you would find in a arcade. Using Zoltar which originated in the movie "Big" as the face of the project.
+
+Short Explanation:
+
 ### heavily designed it with CSS everything other then the image of zoltar is with CSS,
 - moving Hand
 - Left hand with the table to create depth
@@ -66,7 +72,7 @@ what did i do in this project
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-For this project I used layers of images then animated, and oriented it with CSS. Using Javascript to add and remove animations as well. Created design with Images, and pure CSS.
+For this project i used Vanilla JS so i could fully master and understand what it has to offer, I created this based off of the real Fortune Teller machines you would find in a arcade. Using Zoltar which originated in the movie "Big" as the face of the project.
 
 <img src="./src/img/ZoltarFirst.gif" alt="a gif of Zoltar with hand moving and lamps flickering" />
 
@@ -92,9 +98,9 @@ I cut the Zoltar image into 3 layers. (the body, and both hands).
 <br/>
 
 <div display="flex" >
-<img src="./src/img/hand.png" width="35" />
-<img src="./src/img/fullPic.png" width="100" />
-<img src="./src/img/depthPic.png" width="100" />
+<img src="./src/img/hand.png" width="20" />
+<img src="./src/img/fullPic.png" width="50" />
+<img src="./src/img/depthPic.png" width="50" />
 </div>
 
 <br/>
