@@ -1,22 +1,5 @@
-<style>@font-face {
-    font-family: Unicorn;
-    src: url("./src/fonts/Unicorn.TTF");
-}
-  #zoltarLogo {
-    top: 0;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    font-family: Unicorn, Courier, monospace;
-    z-index: 22;
-    font-size: 3rem;
-    color: red;
-    -webkit-text-stroke: 1px rgb(255, 118, 6);
-    text-shadow: 0px 30px 10px rgba(0, 0, 0, 8%);
-}</style>
-
 <a name="readme-top"></a>
 <!-- PROJECT LOGO -->
-<p id="zoltarLogo" align="center" >ZOLTAR</p>
 <div align="center">
 <h1 align="center">Zoltar - Online Fortune Teller</h1>
   <p align="center">
@@ -37,15 +20,15 @@
       </ul>
       <li><a href="#design">Design</a></li>
       <ul>
-      <li><a>Zoltar</a></li>
-      <li><a>Booth & Background</a></li>
+      <li><a href="#zoltar">Zoltar</a></li>
+      <li><a href="#booth--background">Booth & Background</a></li>
       <ul>
-      <li><a>Zoltar Text</a></li>
-      <li><a>Lamps</a></li>
-      <li><a>Crystal Ball</a></li>
+      <li><a href="#zoltar-text">Zoltar Text</a></li>
+      <li><a href="#lamps">Lamps</a></li>
+      <li><a href="#crystal-ball">Crystal Ball</a></li>
       <li><a>Coins</a></li>
       </ul>
-      <li><a>Fortune Card</a></li>
+      <li><a href="#fortune-card">Fortune Card</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -91,6 +74,7 @@ I cut the Zoltar image into 3 layers. (the body, and both hands).
 I cut them this way so i can animate his right hand with css over the crystal ball and place his other hand over a css made table using `z-index` to create more depth in the 2D image.
 
 <img src="./src/img/README/leftHandGif.gif" width="120" />
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br/>
 
 ### Booth & Background
@@ -98,6 +82,7 @@ I cut them this way so i can animate his right hand with css over the crystal ba
 For the text i used a JS library to help with the curve that the fortune telling machines usually have. i Chose *insert library name here* which is a text curving library to solve this issue.
 
 <img src="./src/img/README/titleGif.gif" width="300" />
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 #### **Lamps**
 For the lamps i created 3 divs and shaped them with CSS into what resembles a lamp, i then created another div with a yellow `box-shadow` under the lamps that fades in and out with the color change in the lamp shades.
@@ -106,7 +91,7 @@ For the lamps i created 3 divs and shaped them with CSS into what resembles a la
 <img src="./src/img/README/lampGif.gif" width="100" />
 
 The CSS animation changes the background color of the lamp shades, as well as the background lights opacity changing with the shades.
-
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br />
 
 ### Fortune Card
@@ -119,6 +104,7 @@ Fonts used:
 <br/>
 
 <img src="./src/img/README/cardShot.png" height="450"/>
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- USAGE EXAMPLES -->
 
 <br/>
