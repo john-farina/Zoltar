@@ -119,26 +119,32 @@ I cut them this way so i can animate his right hand with css over the crystal ba
 
 <img src="./src/img/README/leftHandGif.gif" width="120" />
 <br/>
+<br/>
 
 ### Booth & Background
 ####  **Zoltar Text**
 For the text i used a JS library to help with the curve that the fortune telling machines usually have. i Chose *insert library name here* which is a text curving library to solve this issue.
+
 <img src="./src/img/README/titleGif.gif" width="300" />
 
 #### **Lamps**
 For the lamps i created 3 divs and shaped them with CSS into what resembles a lamp, i then created another div with a yellow `box-shadow` under the lamps that fades in and out with the color change in the lamp shades.
 <br/>
-<img src="./src/img/README/lampGif.gif" width="100" />
 
+<img src="./src/img/README/lampGif.gif" width="100" />
+<br/>
 The CSS animation changes the background color of the lamp shades, as well as the background lights opacity changing with the shades.
+
 <br />
 
 ### Fortune Card
 
-For the card i used pure CSS and added in webFonts to get as close as possible
+For the card i used pure CSS and added in web-fonts to get as close as possible to the classic look of the card
+
 Fonts used:
-- font
-- font
+- **Reikna** *(for the headers)*
+- **Enchanted Land** *(for the body)*
+<br/>
 
 <img src="./src/img/README/cardShot.png" height="450"/>
 <!-- USAGE EXAMPLES -->
