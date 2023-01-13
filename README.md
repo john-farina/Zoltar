@@ -91,10 +91,11 @@ For making Zoltar i wanted to use all CSS, but allowed myself to use a image for
 I cut the Zoltar image into 3 layers. (the body, and both hands).
 <br/>
 
-
+<div display="flex" >
 <img src="./src/img/hand.png" width="35" />
 <img src="./src/img/fullPic.png" width="100" />
 <img src="./src/img/depthPic.png" width="100" />
+</div>
 
 <br/>
 I cut them this way so i can animate his right hand with css, and place his other hand over a css made table to create depth.
