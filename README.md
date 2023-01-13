@@ -104,12 +104,14 @@ I cut the Zoltar image into 3 layers. (the body, and both hands).
 <img src="./src/img/depthPic.png" width="50" />
 </div>
 
-I cut them this way so i can animate his right hand with css, and place his other hand over a css made table to create depth.
+I cut them this way so i can animate his right hand with css over the crystal ball and place his other hand over a css made table using `z-index` to create more depth in the 2D image.
 <br/>
 
 ### Booth & Background
+####  **Zoltar Text**
+For the text i used a JS library to help with the curve that the fortune telling machines usually have. i Chose *insert library name here* which is a text curving library to solve this issue.
 
-For the booth design first i made the Zoltar logo which old fortune telling machines usually have, i used a JS library for the curve of the text and added a `text-shadow` to create more depth.
+#### **Lamps**
 <br />
 
 ### Fortune Card
