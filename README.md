@@ -60,7 +60,8 @@ Short Explanation:
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>       <li><a href="#design">Design</a></li>
+        <li><a href="#built-with">Built With</a></li>
+      <li><a href="#design">Design</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -103,16 +104,23 @@ I cut the Zoltar image into 3 layers. (the body, and both hands).
 <img src="./src/img/depthPic.png" width="50" />
 </div>
 
-<br/>
 I cut them this way so i can animate his right hand with css, and place his other hand over a css made table to create depth.
-
 <br/>
 
 ### Booth & Background
 
 For the booth design first i made the Zoltar logo which old fortune telling machines usually have, i used a JS library for the curve of the text and added a `text-shadow` to create more depth.
 <br />
+
+### Fortune Card
+
+For the card i used pure CSS and added in webFonts to get as close as possible
+Fonts used:
+- font
+- font
 <!-- USAGE EXAMPLES -->
+
+<br/>
 
 ## Usage
 
