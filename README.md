@@ -1,5 +1,3 @@
-<a name="readme-top"></a>
-<!-- PROJECT LOGO -->
 <style>
   @font-face {
     font-family: Unicorn;
@@ -17,6 +15,9 @@
     text-shadow: 0px 30px 10px rgba(0, 0, 0, 8%);
 }
 </style>
+
+<a name="readme-top"></a>
+<!-- PROJECT LOGO -->
 <p id="zoltarLogo" align="center" >ZOLTAR</p>
 <div align="center">
 <h1 align="center">Zoltar - Online Fortune Teller</h1>
