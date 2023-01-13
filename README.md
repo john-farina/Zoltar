@@ -60,8 +60,19 @@ Short Explanation:
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+      <li><a href="#built-with">Built With</a></li>
+      </ul>
       <li><a href="#design">Design</a></li>
+      <ul>
+      <li><a>Zoltar</a></li>
+      <li><a>Booth & Background</a></li>
+      <ul>
+      <li><a>Zoltar Text</a></li>
+      <li><a>Lamps</a></li>
+      <li><a>Crystal Ball</a></li>
+      <li><a>Coins</a></li>
+      </ul>
+      <li><a>Fortune Card</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -128,6 +139,8 @@ For the card i used pure CSS and added in webFonts to get as close as possible
 Fonts used:
 - font
 - font
+
+<img src="./src/img/README/cardShot.png" height="450"/>
 <!-- USAGE EXAMPLES -->
 
 <br/>
