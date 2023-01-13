@@ -119,7 +119,6 @@ I cut them this way so i can animate his right hand with css over the crystal ba
 
 <img src="./src/img/README/leftHandGif.gif" width="120" />
 <br/>
-<br/>
 
 ### Booth & Background
 ####  **Zoltar Text**
@@ -132,7 +131,7 @@ For the lamps i created 3 divs and shaped them with CSS into what resembles a la
 <br/>
 
 <img src="./src/img/README/lampGif.gif" width="100" />
-<br/>
+
 The CSS animation changes the background color of the lamp shades, as well as the background lights opacity changing with the shades.
 
 <br />
