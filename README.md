@@ -56,15 +56,21 @@ For making Zoltar i wanted to use all CSS, but allowed myself to use a image for
 <br/>
 I cut the Zoltar image into 3 layers. (the body, and both hands).
 <br/>
+
+
 <img src="./src/img/hand.png" width="35" />
 <img src="./src/img/fullPic.png" width="100" />
 <img src="./src/img/depthPic.png" width="100" />
+
 <br/>
-I cut them this way so i can animate his right hand with css, and place his other hand over a made table to create depth.
+I cut them this way so i can animate his right hand with css, and place his other hand over a css made table to create depth.
+
+<br/>
 
 ### Booth & Background
 
-For his
+For the booth design first i made the Zoltar logo which old fortune telling machines usually have, i used a JS library for the curve of the text and added a `text-shadow` to create more depth.
+<br />
 <!-- USAGE EXAMPLES -->
 
 ## Usage
