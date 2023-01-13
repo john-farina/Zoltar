@@ -99,9 +99,9 @@ I cut the Zoltar image into 3 layers. (the body, and both hands).
 <br/>
 
 <div display="flex" >
-<img src="./src/img/hand.png" width="20" />
-<img src="./src/img/fullPic.png" width="50" />
-<img src="./src/img/depthPic.png" width="50" />
+<img src="./src/img/hand.png" width="25" />
+<img src="./src/img/fullPic.png" width="70" />
+<img src="./src/img/depthPic.png" width="70" />
 </div>
 
 I cut them this way so i can animate his right hand with css over the crystal ball and place his other hand over a css made table using `z-index` to create more depth in the 2D image.
@@ -110,8 +110,14 @@ I cut them this way so i can animate his right hand with css over the crystal ba
 ### Booth & Background
 ####  **Zoltar Text**
 For the text i used a JS library to help with the curve that the fortune telling machines usually have. i Chose *insert library name here* which is a text curving library to solve this issue.
+<img src="./src/img/README/titleGif.gif" width="300" />
 
 #### **Lamps**
+For the lamps i created 3 divs and shaped them with CSS into what resembles a lamp, i then created another div with a yellow `box-shadow` under the lamps that fades in and out with the color change in the lamp shades.
+<br/>
+<img src="./src/img/README/lampGif.gif" width="100" />
+
+The CSS animation changes the background color of the lamp shades, as well as the background lights opacity changing with the shades.
 <br />
 
 ### Fortune Card
