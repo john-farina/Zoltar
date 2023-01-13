@@ -1,5 +1,4 @@
-<style>
-  @font-face {
+<style>@font-face {
     font-family: Unicorn;
     src: url("./src/fonts/Unicorn.TTF");
 }
@@ -13,8 +12,7 @@
     color: red;
     -webkit-text-stroke: 1px rgb(255, 118, 6);
     text-shadow: 0px 30px 10px rgba(0, 0, 0, 8%);
-}
-</style>
+}</style>
 
 <a name="readme-top"></a>
 <!-- PROJECT LOGO -->
