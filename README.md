@@ -18,6 +18,16 @@
       <ul>
       <li><a href="#built-with">Built With</a></li>
       </ul>
+        <li><a href="#javascript">JavaScript</a></li>
+        <ul>
+        <li><a href="#fortune-card">Fortune Card</a></li>
+        <ul>
+        <li><a href="#creation">Creation</a></li>
+        <li><a href="#random-fortune">Random Fortune</a></li>
+        <li><a href="#lucky-numbers">Lucky Numbers</a></li>
+        </ul>
+        <li><a href="#sound-design">Sound Design</a></li>
+        </ul>
       <li><a href="#design">Design</a></li>
       <ul>
       <li><a href="#zoltar">Zoltar</a></li>
@@ -31,10 +41,6 @@
       <li><a href="#fortune-card">Fortune Card</a></li>
       </ul>
     </li>
-    <li><a href="#sound-design">Sound Design</a></li>
-    <ul>
-    <li><a></a></li>
-    </ul>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#contact">Contact</a></li>
   </ol>
@@ -60,26 +66,12 @@ I then manipulate the DOM to place a random fortune after Zoltar has spoken wisd
 <br/>
 <br/>
 
-### javascript generated fortunes. All legit fortunes from the branded Zoltar desk toy (and a few real ones i got from actual fortune teller machines).
-### javascript controls animations removing and adding classNames associated with CSS animations per event.
-- generates a new Fortune Card with every new event.
-- the fortunes are taken from an Array with all of the fortunes at random and gets put into the body of the Fortune Card
-- 6 Random Numbers are created from 1-100 and gets put into a string that styles the random numbers Generated and sends that into the card.
-  - `[8,20,6,4,35] => "Your Lucky Numbers Are: 08, 20, 06, 04, 35"`
-- for styling info about card visit Design:Card
-- ### Most animation classes are sent when the audio starts or ends.
-- when Quarter audio stops playing, Zoltar turns on and starts moving as well as his random phrase audio starting.
-- once the speaking audio has stopped, Zoltar turns off and ur card gets sent out for you to read.
-- then resets the state once you have closed your fortune. to generate a new one.
-<br/>
-<br/>
-<br/>
 
 ## JavaScript
 
 ###  Fortune Card
 #### **Creation**
-I create a new fortune card by manipulating DOM and adding in new divs everytime the script runs
+I create a new fortune card by manipulating DOM and adding in new divs everytime the script runs. for information on the design go to <a href="#fortune-card-design">Fortune Card Design</a>
 
 #### **Random Fortune**
 For the fortunes i store a long array of fortunes *(actual fortunes i got from a Zoltar desk toy, and some i've gotten from real machines)*, and get a randomNumber from the length of the state array, i then return the random fortune into the body of the new generated card.
@@ -93,8 +85,11 @@ it then gets returned into the footer of the new generated card.
 <br/>
 
 ### Sound Design
-With sounds i needed a predictable way to run events when the audio starts/stops. So i chose to use <a href="">Howler</a> which is a JS library that helps with that and more.
-
+With sounds i needed a predictable way to run events when the audio starts/stops. So i chose to use <a href="https://howlerjs.com/">Howler</a> which is a JS library that helps with that and more.
+<br/>
+The sounds go in order from Coin Slot, Random Phrase, to Ticket Dispense. these sounds trigger eachother by playing after each one ends, and adding and removing animation class names that are needed for that phase in the audio. <br/>
+For example, when the Coin Slot sound ends Zoltar's machine turns on, and so does the Random Phrase. After all of that is done it turns itself off and Dispenses Ticket with sound. <br/>
+At the end it resets its state and sets up for the next random fortune.
 
 <br/>
 
@@ -147,7 +142,7 @@ when Zoltar is done talking/hasn't started talking it will stay white.
 
 <br />
 
-### Fortune Card
+### Fortune Card Design
 
 For the card i used pure CSS and added in web-fonts to get as close as possible to the classic look of the card
 
