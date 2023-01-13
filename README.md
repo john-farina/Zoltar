@@ -20,7 +20,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#built-with">Built With</a></li>       <li><a href="#design">Design</a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -42,11 +42,29 @@ I then manipulate the DOM to place a random fortune after Zoltar has spoken wisd
 
 <br/>
 
-### Built With
+## Built With
  - Javascript
  - CSS
 <br/>
 <br/>
+
+## Design
+
+### Zoltar
+
+For making Zoltar i wanted to use all CSS, but allowed myself to use a image for the main Image.
+<br/>
+I cut the Zoltar image into 3 layers. (the body, and both hands).
+<br/>
+<img src="./src/img/hand.png" width="35" />
+<img src="./src/img/fullPic.png" width="100" />
+<img src="./src/img/depthPic.png" width="100" />
+<br/>
+I cut them this way so i can animate his right hand with css, and place his other hand over a made table to create depth.
+
+### Booth & Background
+
+For his
 <!-- USAGE EXAMPLES -->
 
 ## Usage
