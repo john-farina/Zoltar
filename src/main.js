@@ -7,11 +7,8 @@ let luckyNumbers;
 let hasHadFirstFortune = false;
 let isTalking = false;
 let cardIsOpen = false;
-
 const body = document.querySelector("body");
-
 const circleType = new CircleType(document.getElementById("zoltarLogo"));
-circleType.radius(500).dir(1);
 
 function randomNumGen(number) {
   let randomNum = Math.floor(Math.random() * number);
@@ -243,6 +240,8 @@ function animationLoop() {
 function start() {
   setInterval(animationLoop, 400);
 }
+
+circleType.radius(500).dir(1);
 
 start();
 
