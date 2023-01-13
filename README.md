@@ -105,6 +105,8 @@ I cut the Zoltar image into 3 layers. (the body, and both hands).
 </div>
 
 I cut them this way so i can animate his right hand with css over the crystal ball and place his other hand over a css made table using `z-index` to create more depth in the 2D image.
+
+<img src="./src/img/README/leftHandGif.gif" width="120" />
 <br/>
 
 ### Booth & Background
