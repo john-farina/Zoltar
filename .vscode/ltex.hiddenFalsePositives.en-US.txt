@@ -1,0 +1,2 @@
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QFor this project I used Vanilla JS so I could fully master and understand what it has to offer, I created this based off of the real Fortune Teller machines you would usually find in an older arcade.\\E$"}
+{"rule":"COMMA_COMPOUND_SENTENCE","sentence":"^\\QI cut them this way so I can animate his right hand with CSS over the crystal ball and place his other hand over a css made table using \\E(?:Dummy|Ina|Jimmy-)[0-9]+\\Q to create more depth in the 2D image.\\E$"}
