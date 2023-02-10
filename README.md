@@ -67,9 +67,6 @@ I then manipulate the DOM to place a random fortune after Zoltar has spoken wisd
 ## Built With
  - JavaScript
  - CSS
-<br/>
-<br/>
-
 
 ## JavaScript
 
